@@ -1,4 +1,4 @@
-:set number
+" :set number
 :set autoindent
 :set tabstop=4
 :set shiftwidth=4
@@ -21,6 +21,6 @@ call plug#end()
 
 nnoremap <C-T> :NERDTreeToggle<CR>
 colorscheme gotham256 
-
+highlight Normal ctermbg=none
 
 
