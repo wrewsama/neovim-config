@@ -1,9 +1,10 @@
-function SetUpColours(colour)
-	colour = colour or "catppuccin"
-	vim.cmd.colorscheme(colour)
+require("catppuccin").setup({
+    transparent_background = true, -- disables setting the background color.
+    integrations = {
+        cmp = true,
+        treesitter = true,
+    },
+})
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-end
-
-SetUpColours()
+-- setup must be called before loading
+vim.cmd.colorscheme "catppuccin"
