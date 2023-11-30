@@ -1,6 +1,12 @@
 # neovim-config
 My neovim config
 
+## Installation
+Clone the repo into your `.config/nvim` directory with:
+```
+    git clone https://github.com/wrewsama/neovim-config.git ~/.config/nvim
+```
+
 ## Setup Instructions
 
 * Ensure you have [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim ) v0.9+ installed.
